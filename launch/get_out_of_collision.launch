@@ -1,0 +1,12 @@
+<launch>
+    <node name="get_out_of_collision_node" pkg="get_out_of_collision" type="get_out_of_collision_node" output="screen">
+        <!-- Time for the trajectory to the out of collision waypoint -->
+        <param name="time_for_goal" value="2.0" />
+        <!-- Fraction of the maximum joint range to jiggle -->
+        <param name="jiggle_fraction" value="0.02" />
+        <!-- Max sampling attempts -->
+        <param name="max_sampling_attempts" value="100" />
+        <!-- MoveIt! group name to use (the more joints the better) -->
+        <param name="group_name" value="arm_torso" />
+    </node>
+</launch>
